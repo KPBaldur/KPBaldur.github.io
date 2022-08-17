@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+<!-- Iconos -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
+    <script src="https://kit.fontawesome.com/b918cc0237.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <title>Proyecto PetShop</title>
+    
+</head>
+<body>
+<!-- HEADERS  -->    
+    <header>
+        <!-- PRIMER HEADER -->
+        <header class="p-3 mb-3 border-bottom" >
+          <div class="container">
+            <!-- ICONO DE LA PAGINA -->
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+              <a href="Index.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+              </a>
+
+              <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              </ul>
+
+              <!-- ICONO DE CARRITO Y ACCESO DE USUARIO -->
+              <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+              </form>
+              <div class="dropdown text-end">
+                <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                </a>
+
+                <!-- DROPMENU USUARIO -->
+                <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1" style="">
+                  <li><a class="dropdown-item" href="formularios.html">Iniciar Sesion</a></li>
+                  <li><a class="dropdown-item" href="#">Registrarse</a></li>
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#" aria-disabled="true">Sign out</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <!-- SEGUNDO HEADER 
+        <div class="header2">
+            <a class="icon-2" href="Index.html">Inicio</a>
+            <a class="icon-2" href="#">Alimento</a>
+            <a class="icon-2" href="accesorios.html">Accesorios</a>
+            <a class="icon-2" href="ropa.html">Ropa</a>
+            <a class="icon-2" href="#">Veterinarios</a>
+            <a class="icon-2" href="about.html">About us</a>
+        </div> -->
+    </header>
+
+    
+
+    <!-- Cuerpo de Pagina -->
+
+<!-- Carrusel automatico -->
+
+    
+
+<div class="b-example-divider"></div>  <!--BARRA PARA DIVIDIR -->
+
+<!--Alimento para PERROS -->
+
+<div class="container-fluid bg-gradient position-sticky top-0">
+    <ul class="nav nav-pills  container" id="pills-tab" style="justify-content:space-between; margin-left: 25;" role="tablist">
+        <li class="nav-item" role="presentation">
+        <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" 
+        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" 
+        aria-selected="true">Inicio</a>
+        </li>
+        <li class="nav-item" role="presentation">
+        <a class="nav-link" id="pills-alimento-tab" data-bs-toggle="pill" 
+        data-bs-target="#pills-alimento" type="button" role="tab" aria-controls="pills-alimento" 
+        aria-selected="false">Alimentos</a>
+        </li>
+        <li class="nav-item" role="presentation">
+        <a class="nav-link" id="pills-accesorio-tab" data-bs-toggle="pill" 
+        data-bs-target="#pills-accesorio" type="button" role="tab" aria-controls="pills-accesorio"
+        aria-selected="false">Accesorios</a>
+        </li>
+        <li class="nav-item" role="presentation">
+        <a class="nav-link" id="pills-ropa-tab" data-bs-toggle="pill" 
+        data-bs-target="#pills-ropa" type="button" role="tab" aria-controls="pills-ropa" 
+        aria-selected="false">Ropa</a>
+        </li>
+        <li class="nav-item" role="presentation">
+        <a class="nav-link" id="pills-veterinario-tab" data-bs-toggle="pill" 
+        data-bs-target="#pills-veterinario" type="button" role="tab" aria-controls="pills-veterinario" 
+        aria-selected="false">Veterinarios</a>
+        </li>
+        <li class="nav-item" role="presentation">
+        <a class="nav-link" id="pills-menucarrito-tab" data-bs-toggle="pill" 
+        data-bs-target="#pills-menucarrito" type="button" role="tab" aria-controls="pills-menucarrito" 
+        aria-selected="false">Tu Carrito</a>
+        </li>
+        <li class="nav-item" role="presentation">
+        <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" 
+        data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" 
+        aria-selected="false">Nosotros</a>
+        </li>
+    </ul>
+    
+     
+
+
+
+  <div class="tab-content" id="pills-tabContent">
+
+    <!-- MENU HOME -->
+    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+        
+        <!-- MENU HOME -->
+
+        <!-- CARRUSEL AUTOMATICO -->
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/arbol.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/camino.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/flores.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+        </div>
+
+        <!-- OFERTAS DE PRODUCTOS -->
+
+        <div class="album py-5">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+  
+                    <!-- PRIMERA IMAGEN DE OFERTA -->
+                    <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="img/oloralibronuevo.gif" alt="100%">
+                        <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                    </div>
+                    </div>
+  
+                    <!-- SEGUNDA IMAGEN DE OFERTA -->
+                    <div class="col">
+                    <div class="card shadow-sm">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                    </div>
+                    </div>
+                
+                    <!-- TERCERA IMAGEN DE OFERTA -->
+                    <div class="col">
+                    <div class="card shadow-sm">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDER DE OFERTAS DE PERROS-->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="background-color:rgb(211, 209, 209) ;">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="b-example-divider"></div>  <!--BARRA PARA DIVIDIR -->
+        <div class="container px-4 py-5" id="featured-3">
+          <h2 class="pb-2 border-bottom">Ofertas de Perros</h2>
+          <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+  
+            <div class="col">
+              <div width="auto" class="card shadow-sm" style="width:300px;">
+                <img src="https://i.pinimg.com/474x/98/50/53/985053eae3200f9e975551362cb2e36b.jpg" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="Monas chinas" data-noaft="1" style="width: 300px; height: 300px; margin: 0px;">
+                <!-- <svg class="bd-placeholder-img card-img-top" width="150" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                <div class="card-body">
+                  <p class="card-text">Comida para perros MasterDog</p>
+                  <p class="card-text">Comia 10kg MasterDog</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Agregar al Carrito</button>
+                    </div>
+                    <small class="text-muted">$ 15.000</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col">
+              <div width="auto" class="card shadow-sm" style="width:300px;">
+                <img src="https://i.pinimg.com/474x/98/50/53/985053eae3200f9e975551362cb2e36b.jpg" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="Monas chinas" data-noaft="1" style="width: 300px; height: 300px; margin: 0px;">
+                <!-- <svg class="bd-placeholder-img card-img-top" width="150" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                <div class="card-body">
+                  <p class="card-text">Comida para perros MasterDog</p>
+                  <p class="card-text">Comia 10kg MasterDog</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Agregar al Carrito</button>
+                    </div>
+                    <small class="text-muted">$ 15.000</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col">
+              <div width="auto" class="card shadow-sm" style="width:300px;">
+                <img src="https://i.pinimg.com/474x/98/50/53/985053eae3200f9e975551362cb2e36b.jpg" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="Monas chinas" data-noaft="1" style="width: 300px; height: 300px; margin: 0px;">
+                <!-- <svg class="bd-placeholder-img card-img-top" width="150" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                <div class="card-body">
+                  <p class="card-text">Comida para perros MasterDog</p>
+                  <p class="card-text">Comia 10kg MasterDog</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Agregar al Carrito</button>
+                    </div>
+                    <small class="text-muted">$ 15.000</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--   <img src="..." class="d-block w-100" alt="..."> -->
+      </div>
+      <div class="carousel-item">
+        <div class="b-example-divider"></div>  <!--BARRA PARA DIVIDIR -->
+  
+        <div class="container px-4 py-5" id="featured-3">
+          <h2 class="pb-2 border-bottom">Ofertas de Perros</h2>
+          <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+  
+            <div class="col">
+              <div width="auto" class="card shadow-sm" style="width:300px;">
+                <img src="https://pbs.twimg.com/profile_images/1368379625441800195/crLgJj3r_400x400.jpg" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="El monas chinas (@monaschinas_181) / Твитер" data-noaft="1" style="width: 300px; height: 300px; margin: 0px;">
+                <!-- <svg class="bd-placeholder-img card-img-top" width="150" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                <div class="card-body">
+                  <p class="card-text">Comida para perros MasterDog</p>
+                  <p class="card-text">Comia 10kg MasterDog</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Agregar al Carrito</button>
+                    </div>
+                    <small class="text-muted">$ 15.000</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col">
+              <div width="auto" class="card shadow-sm" style="width:300px;">
+                <img src="https://pbs.twimg.com/profile_images/1368379625441800195/crLgJj3r_400x400.jpg" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="El monas chinas (@monaschinas_181) / Твитер" data-noaft="1" style="width: 300px; height: 300px; margin: 0px;">
+                <!-- <svg class="bd-placeholder-img card-img-top" width="150" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                <div class="card-body">
+                  <p class="card-text">Comida para perros MasterDog</p>
+                  <p class="card-text">Comia 10kg MasterDog</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Agregar al Carrito</button>
+                    </div>
+                    <small class="text-muted">$ 15.000</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col">
+              <div width="auto" class="card shadow-sm" style="width:300px;">
+                <img src="https://pbs.twimg.com/profile_images/1368379625441800195/crLgJj3r_400x400.jpg" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="El monas chinas (@monaschinas_181) / Твитер" data-noaft="1" style="width: 300px; height: 300px; margin: 0px;">
+                <!-- <svg class="bd-placeholder-img card-img-top" width="150" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                <div class="card-body">
+                  <p class="card-text">Comida para perros MasterDog</p>
+                  <p class="card-text">Comia 10kg MasterDog</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Agregar al Carrito</button>
+                    </div>
+                    <small class="text-muted">$ 15.000</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!--   <img src="..." class="d-block w-100" alt="..."> -->
+      </div>
+      <div class="carousel-item">
+  
+        <div class="b-example-divider"></div>  <!--BARRA PARA DIVIDIR -->
+  
+        <div class="container px-4 py-5" id="featured-3">
+          <h2 class="pb-2 border-bottom">Ofertas de Perros</h2>
+          <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+  
+            <div class="col">
+              <div width="auto" class="card shadow-sm" style="width:300px;">
+                <img src="https://i.pinimg.com/474x/98/50/53/985053eae3200f9e975551362cb2e36b.jpg" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="Monas chinas" data-noaft="1" style="width: 300px; height: 300px; margin: 0px;">
+                <!-- <svg class="bd-placeholder-img card-img-top" width="150" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                <div class="card-body">
+                  <p class="card-text">Comida para perros MasterDog</p>
+                  <p class="card-text">Comia 10kg MasterDog</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Agregar al Carrito</button>
+                    </div>
+                    <small class="text-muted">$ 15.000</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col">
+              <div width="auto" class="card shadow-sm" style="width:300px;">
+                <img src="https://i.pinimg.com/474x/98/50/53/985053eae3200f9e975551362cb2e36b.jpg" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="Monas chinas" data-noaft="1" style="width: 300px; height: 300px; margin: 0px;">
+                <!-- <svg class="bd-placeholder-img card-img-top" width="150" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                <div class="card-body">
+                  <p class="card-text">Comida para perros MasterDog</p>
+                  <p class="card-text">Comia 10kg MasterDog</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Agregar al Carrito</button>
+                    </div>
+                    <small class="text-muted">$ 15.000</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col">
+              <div width="auto" class="card shadow-sm" style="width:300px;">
+                <img src="https://i.pinimg.com/474x/98/50/53/985053eae3200f9e975551362cb2e36b.jpg" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="Monas chinas" data-noaft="1" style="width: 300px; height: 300px; margin: 0px;">
+                <!-- <svg class="bd-placeholder-img card-img-top" width="150" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                <div class="card-body">
+                  <p class="card-text">Comida para perros MasterDog</p>
+                  <p class="card-text">Comia 10kg MasterDog</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Agregar al Carrito</button>
+                    </div>
+                    <small class="text-muted">$ 15.000</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!--   <img src="..." class="d-block w-100" alt="..."> -->
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+        </div>
+  
+        <!-- SLIDER DE OFERTAS DE GATOS -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="background-color:rgb(211, 209, 209) ;">
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="b-example-divider"></div>  <!--BARRA PARA DIVIDIR -->
+                <div class="container px-4 py-5" id="featured-3">
+                <h2 class="pb-2 border-bottom">Ofertas de Gatos</h2>
+                <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        
+                    <div class="col">
+                    <div width="auto" class="card shadow-sm" style="width:300px;">
+                        <img src="https://i.pinimg.com/474x/98/50/53/985053eae3200f9e975551362cb2e36b.jpg" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="Monas chinas" data-noaft="1" style="width: 300px; height: 300px; margin: 0px;">
+                        <!-- <svg class="bd-placeholder-img card-img-top" width="150" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                        <div class="card-body">
+                        <p class="card-text">Comida para perros MasterDog</p>
+                        <p class="card-text">Comia 10kg MasterDog</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Agregar al Carrito</button>
+                            </div>
+                            <small class="text-muted">$ 15.000</small>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+        
+                    <div class="col">
+                    <div width="auto" class="card shadow-sm" style="width:300px;">
+                        <img src="https://i.pinimg.com/474x/98/50/53/985053eae3200f9e975551362cb2e36b.jpg" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="Monas chinas" data-noaft="1" style="width: 300px; height: 300px; margin: 0px;">
+                        <!-- <svg class="bd-placeholder-img card-img-top" width="150" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                        <div class="card-body">
+                        <p class="card-text">Comida para perros MasterDog</p>
+                        <p class="card-text">Comia 10kg MasterDog</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Agregar al Carrito</button>
+                            </div>
+                            <small class="text-muted">$ 15.000</small>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+        
+                    <div class="col">
+                    <div width="auto" class="card shadow-sm" style="width:300px;">
+                        <img src="https://i.pinimg.com/474x/98/50/53/985053eae3200f9e975551362cb2e36b.jpg" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="Monas chinas" data-noaft="1" style="width: 300px; height: 300px; margin: 0px;">
+                        <!-- <svg class="bd-placeholder-img card-img-top" width="150" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                        <div class="card-body">
+                        <p class="card-text">Comida para perros MasterDog</p>
+                        <p class="card-text">Comia 10kg MasterDog</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Agregar al Carrito</button>
+                            </div>
+                            <small class="text-muted">$ 15.000</small>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <!--   <img src="..." class="d-block w-100" alt="..."> -->
+            </div>
+            <div class="carousel-item">
+                <div class="b-example-divider"></div>  <!--BARRA PARA DIVIDIR -->
+        
+                <div class="container px-4 py-5" id="featured-3">
+                <h2 class="pb-2 border-bottom">Ofertas de Gatos</h2>
+                <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        
+                    <div class="col">
+                    <div width="auto" class="card shadow-sm" style="width:300px;">
+                        <img src="https://pbs.twimg.com/profile_images/1368379625441800195/crLgJj3r_400x400.jpg" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="El monas chinas (@monaschinas_181) / Твитер" data-noaft="1" style="width: 300px; height: 300px; margin: 0px;">
+                        <!-- <svg class="bd-placeholder-img card-img-top" width="150" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                        <div class="card-body">
+                        <p class="card-text">Comida para perros MasterDog</p>
+                        <p class="card-text">Comia 10kg MasterDog</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Agregar al Carrito</button>
+                            </div>
+                            <small class="text-muted">$ 15.000</small>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+        
+                    <div class="col">
+                    <div width="auto" class="card shadow-sm" style="width:300px;">
+                        <img src="https://pbs.twimg.com/profile_images/1368379625441800195/crLgJj3r_400x400.jpg" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="El monas chinas (@monaschinas_181) / Твитер" data-noaft="1" style="width: 300px; height: 300px; margin: 0px;">
+                        <!-- <svg class="bd-placeholder-img card-img-top" width="150" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                        <div class="card-body">
+                        <p class="card-text">Comida para perros MasterDog</p>
+                        <p class="card-text">Comia 10kg MasterDog</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Agregar al Carrito</button>
+                            </div>
+                            <small class="text-muted">$ 15.000</small>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+        
+                    <div class="col">
+                    <div width="auto" class="card shadow-sm" style="width:300px;">
+                        <img src="https://pbs.twimg.com/profile_images/1368379625441800195/crLgJj3r_400x400.jpg" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="El monas chinas (@monaschinas_181) / Твитер" data-noaft="1" style="width: 300px; height: 300px; margin: 0px;">
+                        <!-- <svg class="bd-placeholder-img card-img-top" width="150" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                        <div class="card-body">
+                        <p class="card-text">Comida para perros MasterDog</p>
+                        <p class="card-text">Comia 10kg MasterDog</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Agregar al Carrito</button>
+                            </div>
+                            <small class="text-muted">$ 15.000</small>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+        
+                <!--   <img src="..." class="d-block w-100" alt="..."> -->
+            </div>
+            <div class="carousel-item">
+        
+                <div class="b-example-divider"></div>  <!--BARRA PARA DIVIDIR -->
+        
+                <div class="container px-4 py-5" id="featured-3">
+                <h2 class="pb-2 border-bottom">Ofertas de Gatos</h2>
+                <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        
+                    <div class="col">
+                    <div width="auto" class="card shadow-sm" style="width:300px;">
+                        <img src="https://i.pinimg.com/474x/98/50/53/985053eae3200f9e975551362cb2e36b.jpg" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="Monas chinas" data-noaft="1" style="width: 300px; height: 300px; margin: 0px;">
+                        <!-- <svg class="bd-placeholder-img card-img-top" width="150" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                        <div class="card-body">
+                        <p class="card-text">Comida para perros MasterDog</p>
+                        <p class="card-text">Comia 10kg MasterDog</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Agregar al Carrito</button>
+                            </div>
+                            <small class="text-muted">$ 15.000</small>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+        
+                    <div class="col">
+                    <div width="auto" class="card shadow-sm" style="width:300px;">
+                        <img src="https://i.pinimg.com/474x/98/50/53/985053eae3200f9e975551362cb2e36b.jpg" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="Monas chinas" data-noaft="1" style="width: 300px; height: 300px; margin: 0px;">
+                        <!-- <svg class="bd-placeholder-img card-img-top" width="150" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                        <div class="card-body">
+                        <p class="card-text">Comida para perros MasterDog</p>
+                        <p class="card-text">Comia 10kg MasterDog</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Agregar al Carrito</button>
+                            </div>
+                            <small class="text-muted">$ 15.000</small>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+        
+                    <div class="col">
+                    <div width="auto" class="card shadow-sm" style="width:300px;">
+                        <img src="https://i.pinimg.com/474x/98/50/53/985053eae3200f9e975551362cb2e36b.jpg" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="Monas chinas" data-noaft="1" style="width: 300px; height: 300px; margin: 0px;">
+                        <!-- <svg class="bd-placeholder-img card-img-top" width="150" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                        <div class="card-body">
+                        <p class="card-text">Comida para perros MasterDog</p>
+                        <p class="card-text">Comia 10kg MasterDog</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Agregar al Carrito</button>
+                            </div>
+                            <small class="text-muted">$ 15.000</small>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+        
+                <!--   <img src="..." class="d-block w-100" alt="..."> -->
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- SLIDER DE OFERTAS DE ACCESORIOS -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="background-color:rgb(211, 209, 209) ;">
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="b-example-divider"></div>  <!--BARRA PARA DIVIDIR -->
+                <div class="container px-4 py-5" id="featured-3">
+                <h2 class="pb-2 border-bottom">Ofertas de Accesorios</h2>
+                <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        
+                    <div class="col">
+                    <div width="auto" class="card shadow-sm" style="width:300px;">
+                        <img src="https://i.pinimg.com/474x/98/50/53/985053eae3200f9e975551362cb2e36b.jpg" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="Monas chinas" data-noaft="1" style="width: 300px; height: 300px; margin: 0px;">
+                        <!-- <svg class="bd-placeholder-img card-img-top" width="150" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                        <div class="card-body">
+                        <p class="card-text">Comida para perros MasterDog</p>
+                        <p class="card-text">Comia 10kg MasterDog</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Agregar al Carrito</button>
+                            </div>
+                            <small class="text-muted">$ 15.000</small>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+        
+                    <div class="col">
+                    <div width="auto" class="card shadow-sm" style="width:300px;">
+                        <img src="https://i.pinimg.com/474x/98/50/53/985053eae3200f9e975551362cb2e36b.jpg" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="Monas chinas" data-noaft="1" style="width: 300px; height: 300px; margin: 0px;">
+                        <!-- <svg class="bd-placeholder-img card-img-top" width="150" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                        <div class="card-body">
+                        <p class="card-text">Comida para perros MasterDog</p>
+                        <p class="card-text">Comia 10kg MasterDog</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Agregar al Carrito</button>
+                            </div>
+                            <small class="text-muted">$ 15.000</small>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+        
+                    <div class="col">
+                    <div width="auto" class="card shadow-sm" style="width:300px;">
+                        <img src="https://i.pinimg.com/474x/98/50/53/985053eae3200f9e975551362cb2e36b.jpg" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="Monas chinas" data-noaft="1" style="width: 300px; height: 300px; margin: 0px;">
+                        <!-- <svg class="bd-placeholder-img card-img-top" width="150" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                        <div class="card-body">
+                        <p class="card-text">Comida para perros MasterDog</p>
+                        <p class="card-text">Comia 10kg MasterDog</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Agregar al Carrito</button>
+                            </div>
+                            <small class="text-muted">$ 15.000</small>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <!--   <img src="..." class="d-block w-100" alt="..."> -->
+            </div>
+            <div class="carousel-item">
+                <div class="b-example-divider"></div>  <!--BARRA PARA DIVIDIR -->
+        
+                <div class="container px-4 py-5" id="featured-3">
+                <h2 class="pb-2 border-bottom">Ofertas de Accesorios</h2>
+                <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        
+                    <div class="col">
+                    <div width="auto" class="card shadow-sm" style="width:300px;">
+                        <img src="https://pbs.twimg.com/profile_images/1368379625441800195/crLgJj3r_400x400.jpg" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="El monas chinas (@monaschinas_181) / Твитер" data-noaft="1" style="width: 300px; height: 300px; margin: 0px;">
+                        <!-- <svg class="bd-placeholder-img card-img-top" width="150" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                        <div class="card-body">
+                        <p class="card-text">Comida para perros MasterDog</p>
+                        <p class="card-text">Comia 10kg MasterDog</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Agregar al Carrito</button>
+                            </div>
+                            <small class="text-muted">$ 15.000</small>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+        
+                    <div class="col">
+                    <div width="auto" class="card shadow-sm" style="width:300px;">
+                        <img src="https://pbs.twimg.com/profile_images/1368379625441800195/crLgJj3r_400x400.jpg" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="El monas chinas (@monaschinas_181) / Твитер" data-noaft="1" style="width: 300px; height: 300px; margin: 0px;">
+                        <!-- <svg class="bd-placeholder-img card-img-top" width="150" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                        <div class="card-body">
+                        <p class="card-text">Comida para perros MasterDog</p>
+                        <p class="card-text">Comia 10kg MasterDog</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Agregar al Carrito</button>
+                            </div>
+                            <small class="text-muted">$ 15.000</small>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+        
+                    <div class="col">
+                    <div width="auto" class="card shadow-sm" style="width:300px;">
+                        <img src="https://pbs.twimg.com/profile_images/1368379625441800195/crLgJj3r_400x400.jpg" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="El monas chinas (@monaschinas_181) / Твитер" data-noaft="1" style="width: 300px; height: 300px; margin: 0px;">
+                        <!-- <svg class="bd-placeholder-img card-img-top" width="150" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                        <div class="card-body">
+                        <p class="card-text">Comida para perros MasterDog</p>
+                        <p class="card-text">Comia 10kg MasterDog</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Agregar al Carrito</button>
+                            </div>
+                            <small class="text-muted">$ 15.000</small>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+        
+                <!--   <img src="..." class="d-block w-100" alt="..."> -->
+            </div>
+            <div class="carousel-item">
+        
+                <div class="b-example-divider"></div>  <!--BARRA PARA DIVIDIR -->
+        
+                <div class="container px-4 py-5" id="featured-3">
+                <h2 class="pb-2 border-bottom">Ofertas de Gatos</h2>
+                <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        
+                    <div class="col">
+                    <div width="auto" class="card shadow-sm" style="width:300px;">
+                        <img src="https://i.pinimg.com/474x/98/50/53/985053eae3200f9e975551362cb2e36b.jpg" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="Monas chinas" data-noaft="1" style="width: 300px; height: 300px; margin: 0px;">
+                        <!-- <svg class="bd-placeholder-img card-img-top" width="150" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                        <div class="card-body">
+                        <p class="card-text">Comida para perros MasterDog</p>
+                        <p class="card-text">Comia 10kg MasterDog</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Agregar al Carrito</button>
+                            </div>
+                            <small class="text-muted">$ 15.000</small>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+        
+                    <div class="col">
+                    <div width="auto" class="card shadow-sm" style="width:300px;">
+                        <img src="https://i.pinimg.com/474x/98/50/53/985053eae3200f9e975551362cb2e36b.jpg" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="Monas chinas" data-noaft="1" style="width: 300px; height: 300px; margin: 0px;">
+                        <!-- <svg class="bd-placeholder-img card-img-top" width="150" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                        <div class="card-body">
+                        <p class="card-text">Comida para perros MasterDog</p>
+                        <p class="card-text">Comia 10kg MasterDog</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Agregar al Carrito</button>
+                            </div>
+                            <small class="text-muted">$ 15.000</small>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+        
+                    <div class="col">
+                    <div width="auto" class="card shadow-sm" style="width:300px;">
+                        <img src="https://i.pinimg.com/474x/98/50/53/985053eae3200f9e975551362cb2e36b.jpg" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="Monas chinas" data-noaft="1" style="width: 300px; height: 300px; margin: 0px;">
+                        <!-- <svg class="bd-placeholder-img card-img-top" width="150" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                        <div class="card-body">
+                        <p class="card-text">Comida para perros MasterDog</p>
+                        <p class="card-text">Comia 10kg MasterDog</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Agregar al Carrito</button>
+                            </div>
+                            <small class="text-muted">$ 15.000</small>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+        
+                <!--   <img src="..." class="d-block w-100" alt="..."> -->
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- VETERINARIOS -->
+
+        <div class="px-4 py-5 my-5 text-center bg-light">
+    <h1 class="display-5 fw-bold">Veterinarios Recomendados</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">Sabemos que nuestras mascotas son parte de nuestra familia, y queremos lo mejor de todo como tambien poder dejar el cuidado de salud en personas confiables. Por eso les presentamos a nuestros Veterinarios recomendados, especialistas para el cuidado de nuestras mascotas.</p>
+    </div>
+    <div class="row text-center" style="margin-top: 80px;">
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+    
+        <h2>Veterinaria 1</h2>
+        <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+        <p><a class="btn btn-secondary" href="#">View details »</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+    
+        <h2>Veterinaria 2</h2>
+        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+        <p><a class="btn btn-secondary" href="#">View details »</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+    
+        <h2>Veterinaria 3</h2>
+        <p>And lastly this, the third column of representative placeholder content.</p>
+        <p><a class="btn btn-secondary" href="#">View details »</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div>
+        </div>
+        
+
+    <!-- FIN DE MENU HOME -->
+    </div>
+
+    <!-- MENU ALIMENTOS DE MASCOTAS -->
+    <div class="tab-pane fade" id="pills-alimento" role="tabpanel" aria-labelledby="pills-alimento-tab">
+        <!-- MENU ALIMENTOS DE MASCOTAS -->
+        
+        <!-- Carrusel automatico -->
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/arbol.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/flores.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/peces.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+        </div>
+
+        <!--Alimento para PERROS -->
+        <div class="container px-4 py-5" id="">
+            <h2 class="pb-2 border-bottom">Alimento para perros</h2>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            
+                <div class="col">
+                    <div width="auto" class="card shadow-sm" style="width:300px;">
+                    <img src="img/monachina.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-text">Comida para perros MasterDog</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="text-primary">Precio: <span class="precio">$15.000</span></h5>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary button d-block ">Agregar al Carrito</button>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div width="auto" class="card shadow-sm" style="width:300px;">
+                    <img src="img/monachina.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-text">Comida para perros MasterDog</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="text-primary">Precio: <span class="precio">$15.000</span></h5>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary button d-block ">Agregar al Carrito</button>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div width="auto" class="card shadow-sm" style="width:300px;">
+                    <img src="img/monachina.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-text">Comida para perros MasterDog</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="text-primary">Precio: <span class="precio">$15.000</span></h5>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary button d-block ">Agregar al Carrito</button>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div width="auto" class="card shadow-sm" style="width:300px;">
+                    <img src="img/monachina.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-text">Comida para perros MasterDog</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="text-primary">Precio: <span class="precio">$15.000</span></h5>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary button d-block ">Agregar al Carrito</button>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div width="auto" class="card shadow-sm" style="width:300px;">
+                    <img src="img/monachina.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-text">Comida para perros MasterDog</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="text-primary">Precio: <span class="precio">$15.000</span></h5>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary button d-block ">Agregar al Carrito</button>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div width="auto" class="card shadow-sm" style="width:300px;">
+                    <img src="img/monachina.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-text">Comida para perros MasterDog</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="text-primary">Precio: <span class="precio">$15.000</span></h5>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary button d-block ">Agregar al Carrito</button>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FIN MENU ALIMENTOS DE MASCOTAS -->
+    </div>
+
+    <!-- MENU ACCESORIOS DE MASCOTAS -->
+    <div class="tab-pane fade" id="pills-accesorio" role="tabpanel" aria-labelledby="pills-contact-tab">
+        <!-- MENU ACCESORIOS DE MASCOTAS -->
+
+        <!-- Carrusel automatico -->
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/arbol.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/flores.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/camino.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+        </div>
+      
+        <!--Juguetes para perro -->
+        <div class="container px-4 py-5" id="featured-3">
+        <h2 class="pb-2 border-bottom">Juguetes para Perros</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      
+            <div class="col">
+                <div width="auto" class="card shadow-sm" style="width:300px;">
+                <img src="img/monachina.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-text">Comida para perros MasterDog</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="text-primary">Precio: <span class="precio">$15.000</span></h5>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary button d-block ">Agregar al Carrito</button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+      
+            <div class="col">
+                <div width="auto" class="card shadow-sm" style="width:300px;">
+                <img src="img/monachina.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-text">Comida para perros MasterDog</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="text-primary">Precio: <span class="precio">$15.000</span></h5>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary button d-block ">Agregar al Carrito</button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+      
+            <div class="col">
+                <div width="auto" class="card shadow-sm" style="width:300px;">
+                <img src="img/monachina.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-text">Comida para perros MasterDog</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="text-primary">Precio: <span class="precio">$15.000</span></h5>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary button d-block ">Agregar al Carrito</button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- FIN MENU ACCESORIOS DE MASCOTAS -->
+    </div>
+
+    <!-- MENU ROPA -->
+    <div class="tab-pane fade" id="pills-ropa" role="tabpanel" aria-labelledby="pills-ropa-tab">
+       <!-- MENU ACCESORIOS DE MASCOTAS -->
+
+        <!-- Carrusel automatico -->
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/peces.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/flores.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/camino.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+        </div>
+      
+        <!--Juguetes para perro -->
+        <div class="container px-4 py-5" id="featured-3">
+        <h2 class="pb-2 border-bottom">Ropa para perros</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      
+            <div class="col">
+                <div width="auto" class="card shadow-sm" style="width:300px;">
+                <img src="img/monachina.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-text">Comida para perros MasterDog</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="text-primary">Precio: <span class="precio">$15.000</span></h5>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary button d-block ">Agregar al Carrito</button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+      
+            <div class="col">
+                <div width="auto" class="card shadow-sm" style="width:300px;">
+                <img src="img/monachina.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-text">Comida para perros MasterDog</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="text-primary">Precio: <span class="precio">$15.000</span></h5>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary button d-block ">Agregar al Carrito</button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+      
+            <div class="col">
+                <div width="auto" class="card shadow-sm" style="width:300px;">
+                <img src="img/monachina.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-text">Comida para perros MasterDog</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="text-primary">Precio: <span class="precio">$15.000</span></h5>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary button d-block ">Agregar al Carrito</button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <!--Juguetes para gatos -->
+        <div class="container px-4 py-5" id="featured-3">
+            <h2 class="pb-2 border-bottom">Juguetes para Gatos</h2>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+          
+                <div class="col">
+                    <div width="auto" class="card shadow-sm" style="width:300px;">
+                    <img src="img/monachina.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-text">Comida para perros MasterDog</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="text-primary">Precio: <span class="precio">$15.000</span></h5>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary button d-block ">Agregar al Carrito</button>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+          
+                <div class="col">
+                    <div width="auto" class="card shadow-sm" style="width:300px;">
+                    <img src="img/monachina.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-text">Comida para perros MasterDog</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="text-primary">Precio: <span class="precio">$15.000</span></h5>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary button d-block ">Agregar al Carrito</button>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+          
+                <div class="col">
+                    <div width="auto" class="card shadow-sm" style="width:300px;">
+                    <img src="img/monachina.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-text">Comida para perros MasterDog</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="text-primary">Precio: <span class="precio">$15.000</span></h5>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary button d-block ">Agregar al Carrito</button>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FIN MENU ACCESORIOS DE MASCOTAS -->
+    </div>
+
+    <!-- MENU VETERINARIOS -->
+    <div class="tab-pane fade" id="pills-veterinario" role="tabpanel" aria-labelledby="pills-veterinario-tab">
+      <!--Alimento para Aves -->
+      <div class="container px-4 py-5" id="featured-3">
+        <h2 class="pb-2 border-bottom">Alimento para roedores</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      
+          <div class="col">
+            <div width="auto" class="card shadow-sm" style="width:300px;">
+              <img src="https://i.pinimg.com/474x/98/50/53/985053eae3200f9e975551362cb2e36b.jpg" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="Monas chinas" data-noaft="1" style="width: 300px; height: 300px; margin: 0px;">
+              <!-- <svg class="bd-placeholder-img card-img-top" width="150" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+              <div class="card-body">
+                <p class="card-text">Comida para perros MasterDog</p>
+                <p class="card-text">Comia 10kg MasterDog</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Agregar al Carrito</button>
+                  </div>
+                  <small class="text-muted">$ 15.000</small>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col">
+            <div width="auto" class="card shadow-sm" style="width:300px;">
+              <img src="https://i.pinimg.com/474x/98/50/53/985053eae3200f9e975551362cb2e36b.jpg" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="Monas chinas" data-noaft="1" style="width: 300px; height: 300px; margin: 0px;">
+              <!-- <svg class="bd-placeholder-img card-img-top" width="150" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+              <div class="card-body">
+                <p class="card-text">Comida para perros MasterDog</p>
+                <p class="card-text">Comia 10kg MasterDog</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Agregar al Carrito</button>
+                  </div>
+                  <small class="text-muted">$ 15.000</small>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col">
+            <div width="auto" class="card shadow-sm" style="width:300px;">
+              <img src="https://i.pinimg.com/474x/98/50/53/985053eae3200f9e975551362cb2e36b.jpg" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="Monas chinas" data-noaft="1" style="width: 300px; height: 300px; margin: 0px;">
+              <!-- <svg class="bd-placeholder-img card-img-top" width="150" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+              <div class="card-body">
+                <p class="card-text">Comida para perros MasterDog</p>
+                <p class="card-text">Comia 10kg MasterDog</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Agregar al Carrito</button>
+                  </div>
+                  <small class="text-muted">$ 15.000</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MENU CARRITO -->
+    <div class="tab-pane fade" id="pills-menucarrito" role="tabpanel" aria-labelledby="pills-menucarrito-tab">
+        <div class="album py-5 bg-light">
+            <div class="container">
+              <div class="container px-4 py-5" id="">
+                <h2 class="pb-2 border-bottom">Mi carrito</h2>
+                
+                <div class="container carrito">
+                  <div class="contenedor-carrito">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">Productos</th>
+                          <th scope="col">Precio</th>
+                          <th scope="col">Cantidad</th>
+                        </tr>
+                      </thead>
+                      <tbody class="tbody">
+          
+                        
+                      </tbody>
+                    </table>
+                    <br><br>
+                    <div class="row mx-4">
+                      <div class="col">
+                        <h3 class="itemCartTotal ">Total: 0</h3>
+                      </div>
+                      <div class="col dflex justify-ontent-end">
+                        <button class="btn btn-success">COMPRAR</button>
+                      </div>
+                    </div>
+          
+          
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+
+    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+        <!--Alimento para mascotas Exoticas -->
+        <div class="container px-4 py-5" id="featured-3">
+          <h2 class="pb-2 border-bottom">Alimento para mascotas Exoticas</h2>
+          <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        
+            <div class="col">
+              <div width="auto" class="card shadow-sm" style="width:300px;">
+                <img src="https://i.pinimg.com/474x/98/50/53/985053eae3200f9e975551362cb2e36b.jpg" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="Monas chinas" data-noaft="1" style="width: 300px; height: 300px; margin: 0px;">
+                <!-- <svg class="bd-placeholder-img card-img-top" width="150" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                <div class="card-body">
+                  <p class="card-text">Comida para perros MasterDog</p>
+                  <p class="card-text">Comia 10kg MasterDog</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Agregar al Carrito</button>
+                    </div>
+                    <small class="text-muted">$ 15.000</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <div class="col">
+              <div width="auto" class="card shadow-sm" style="width:300px;">
+                <img src="https://i.pinimg.com/474x/98/50/53/985053eae3200f9e975551362cb2e36b.jpg" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="Monas chinas" data-noaft="1" style="width: 300px; height: 300px; margin: 0px;">
+                <!-- <svg class="bd-placeholder-img card-img-top" width="150" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                <div class="card-body">
+                  <p class="card-text">Comida para perros MasterDog</p>
+                  <p class="card-text">Comia 10kg MasterDog</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Agregar al Carrito</button>
+                    </div>
+                    <small class="text-muted">$ 15.000</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <div class="col">
+              <div width="auto" class="card shadow-sm" style="width:300px;">
+                <img src="https://i.pinimg.com/474x/98/50/53/985053eae3200f9e975551362cb2e36b.jpg" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="Monas chinas" data-noaft="1" style="width: 300px; height: 300px; margin: 0px;">
+                <!-- <svg class="bd-placeholder-img card-img-top" width="150" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                <div class="card-body">
+                  <p class="card-text">Comida para perros MasterDog</p>
+                  <p class="card-text">Comia 10kg MasterDog</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Agregar al Carrito</button>
+                    </div>
+                    <small class="text-muted">$ 15.000</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+
+
+<!-- Footer -->
+
+
+<div class="container">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+      </ul>
+      <p class="text-center text-muted">© 2021 Company, Inc</p>
+    </footer>
+</div>
+
+</div>
+<script src="/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+</html>

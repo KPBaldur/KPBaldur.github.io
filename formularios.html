@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/">
+    <link href="/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+<!-- Iconos -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
+    <script src="https://kit.fontawesome.com/b918cc0237.js" crossorigin="anonymous"></script>
+    
+    <title>Proyecto PetShop</title>
+    
+</head>
+<body>
+<!-- HEADERS  -->    
+    <header>
+        <!-- PRIMER HEADER -->
+        <header class="py-3 mb-3 border-bottom">
+          <div class="container-fluid d-grid gap-3 align-items-center" style="grid-template-columns: 1fr 2fr;">
+            <div class="dropdown">
+              <a href="index.html" class="d-flex align-items-center col-lg-4 mb-2 mb-lg-0 link-dark text-decoration-none dropdown-toggle" id="dropdownNavLink" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="img/logopetshop02.png" height="70" alt="">
+              </a>
+            </div>
+      
+            <div class="d-flex align-items-center">
+              <form class="w-100 me-3">
+                
+              </form>
+      
+              <div class="flex-shrink-0 dropdown">
+                <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="https://github.com/mdo.png" alt="mdo" width="50" height="50" class="rounded-circle">
+                </a>
+                <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+                  <li><a class="dropdown-item" href="formularios.html">Iniciar Sesion</a></li>
+                  <li><a class="dropdown-item" href="formularios.html">Registrarse</a></li>
+                  <li><a class="dropdown-item" href="#">Perfil</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Cerrar Sesion</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <!-- SEGUNDO HEADER -->
+        
+        <header class="container-fluid bg-white position-sticky top-0">
+          <ul
+            class="nav nav-pills mb-3 py-3 container" style="justify-content:space-between;"
+            id="pills-tab"
+            role="tablist">
+    
+            <li class="text-primary" role="presentation">
+                <a href="index.html" class="nav-link active">
+                    Home
+                </a>
+            </li>
+    
+            <li class="nav-item" role="presentation">
+                <a href="index.html" class="nav-link">
+                    Productos
+                </a>
+            </li>
+    
+            <li  class="nav-item" role="presentation">
+                <a href="index.html" class="nav-link">
+                    Accesorios
+                </a>
+              </li>
+    
+            <li class="nav-item" role="presentation">
+                <a href="index.html" class="nav-link">
+                    Ropa
+                </a>
+            </li>
+    
+            <li class="nav-item" role="presentation">
+                <a href="index.html" class="nav-link">
+                    Veterinaios
+                </a>
+            </li>
+    
+            <li class="nav-item" role="presentation">
+                <a href="index.html" class="nav-link">
+                    Carrito
+                </a>
+            </li>
+    
+            <li class="nav-item" role="presentation">
+                <a href="index.html" class="nav-link">
+                    Nosotros
+                </a>
+            </li>
+          </ul>
+        </header>
+
+    </header>
+
+    
+
+    <!-- Cuerpo de Pagina -->
+
+<!-- Carrusel automatico -->
+
+<div class="container">
+    <main>
+      <div class="py-5 text-center">
+        
+        <h2>Bienvenido a tu cuenta</h2>
+        <p class="lead">En Petshop nos especializamos en un servicio de exelenta para nuestros clientes y sus mascotas, y para poder brindar un mejor servicio te recomendamos registrarte para hacer seguimiento a tus comprar y solicitudes.</p>
+      </div>
+  
+      <div class="row g-5">
+        <div class="col-md-5 col-lg-4 order-md-last">
+          <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span style="color: orange;" class="">Inicio de Sesion</span>
+            <span class="badge bg-primary rounded-pill"></span>
+          </h4>
+          <ul class="list-group mb-3">
+            <label for="firstName" class="form-label">Correo de Usuario</label>
+            <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+
+            <label for="firstName" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="firstName" placeholder="" value="" required="">
+          </ul>
+  
+          <form class="card p-2">
+            <div class="input-group">
+                <button style="background-color: orange; border-color: brown;" class="w-100 btn btn-primary btn-lg" type="submit">Iniciar Sesion</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-7 col-lg-8">
+          <h4 style="color: orange;" class="mb-3">Registrar usuario</h4>
+          <form class="needs-validation" novalidate="">
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label for="firstName" class="form-label">Primer nombre</label>
+                <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                <div class="invalid-feedback">
+                  Ingrese un Nombre valido.
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <label for="firstName" class="form-label">Segundo nombre</label>
+                <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                <div class="invalid-feedback">
+                  Ingrese un Nombre valido.
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <label for="firstName" class="form-label">Primer Apellido</label>
+                <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                <div class="invalid-feedback">
+                  Ingrese un Apellido valido.
+                </div>
+              </div>
+        
+
+              <div class="col-sm-6">
+                <label for="lastName" class="form-label">Segundo Apellido</label>
+                <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                <div class="invalid-feedback">
+                    Ingrese un Apellido valido.
+                </div>
+              </div>
+  
+              <div class="col-12">
+                <label for="username" class="form-label">Rut</label>
+                <div class="input-group has-validation">
+                  <span class="input-group-text">Rut de usuario</span>
+                  <input type="text" class="form-control" id="username" placeholder="Sin digito Verificador" required="">
+                <div class="invalid-feedback">
+                    Ingrese un rut valido.
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-12">
+                <label for="email" class="form-label">Correo</label>
+                <input type="email" class="form-control" id="email" placeholder="Tu@correo.com">
+                <div class="invalid-feedback">
+                  Porfavor veirica que tu correo este bien digitado.
+                </div>
+              </div>
+
+              <div class="col-12">
+                <label for="username" class="form-label">Telefono</label>
+                <div class="input-group has-validation">
+                  <span class="input-group-text">+569</span>
+                  <input type="text" class="form-control" id="username" placeholder="Telefono Movil" required="">
+                <div class="invalid-feedback">
+                    Ingrese un numero de 9 dijitos valido.
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-12">
+                <label for="address" class="form-label">Dirección</label>
+                <input type="text" class="form-control" id="address" placeholder="1234 Calle terrible pulenta" required="">
+                <div class="invalid-feedback">
+                  Porfavor ingresa una dirreccion valida.
+                </div>
+              </div>
+  
+              <div class="col-12">
+                <label for="address2" class="form-label">Dirección 2<span class="text-muted">(Optional)</span></label>
+                <input type="text" class="form-control" id="address2" placeholder="1234 Calle terrible pulenta">
+              </div>
+  
+              <div class="col-md-5">
+                <label for="country" class="form-label">Región</label>
+                <select class="form-select" id="country" required="">
+                  <option value="">Seleccione una opcion</option>
+                  <option>Region Metropolitana</option>
+                  <option>Region Arica</option>
+                </select>
+                <div class="invalid-feedback">
+                  Porfavor seleccione una Region.
+                </div>
+              </div>
+  
+              <div class="col-md-4">
+                <label for="state" class="form-label">Comuna</label>
+                <select class="form-select" id="state" required="">
+                  <option value="">Seleccione una opcion</option>
+                  <option>Santiago</option>
+                </select>
+                <div class="invalid-feedback">
+                  PPorfavor seleccione una Comuna.
+                </div>
+              </div>
+  
+              <div class="col-md-3">
+                <label for="zip" class="form-label">Codigo postal</label>
+                <input type="text" class="form-control" id="zip" placeholder="" required="">
+                <div class="invalid-feedback">
+                  Codigo postal requerido para Delivery.
+                </div>
+              </div>
+            </div>
+
+            <h4 class="mb-3"></h4>
+        
+            <div class="row gy-3">
+              <div class="col-md-6">
+                <label for="cc-name" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="cc-name" placeholder="" required="">
+                <small class="text-muted">Utilize mayusculas y simbolos.</small>
+                <div class="invalid-feedback">
+                  Ingrese una contraseña.
+                </div>
+              </div>
+  
+              <div class="col-md-6">
+                <label for="cc-number" class="form-label">Confirmar contraseña</label>
+                <input type="password" class="form-control" id="cc-number" placeholder="" required="">
+                <div class="invalid-feedback">
+                    La contraseña no coincide contraseña.
+                </div>
+              </div>
+  
+              <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="same-address">
+              <label class="form-check-label" for="same-address">Acepto los Terminos y condiciones.</label>
+            </div>
+  
+            <hr class="my-4">
+  
+            <button style="background-color: orange; border-color: brown;" class="w-100 btn btn-primary btn-lg" type="submit">Registrarse</button>
+          </form>
+        </div>
+      </div>
+    </main>
+  
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+      <p class="mb-1"></p>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="#"></a></li>
+      </ul>
+    </footer>
+</div>
+
+
+
+
+<!-- Footer -->
+
+
+<div class="container">
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+    </ul>
+    <p class="text-center text-muted">© 2021 Company, Inc</p>
+  </footer>
+</div>
+
+<script src="/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
