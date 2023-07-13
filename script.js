@@ -108,7 +108,7 @@ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 /*#################################################################*/
 /*----------------Efecto escritura---------------------------------*/
 const typado = new Typed('.texto-multiple',{
-    strings: ['Desarrollador Fronted', 'Diseñador UX/UI', 'Artista Conceptual', 'Modelador 3D'],
+    strings: ['Desarrollador Front-end', 'Diseñador UX/UI', 'Artista Conceptual', 'Modelador 3D'],
     typeSpeed: 100,
     backSpeed: 100,
     BackDelay: 100,
